@@ -1,6 +1,7 @@
 body {
-    font-family: 'HalyardDis_ISIAU Bk' Arial, sans-serif;
+    font-family: 'HalyardDis_ISIAU Bk', sans-serif;
     font-size: 20px;
+    display: flex;
 }
 
 h1{
@@ -21,10 +22,6 @@ a:hover{
 a:visited{
     color: gray;
     text-decoration: line-through;
-}
-
-div{
-    background-color: blue;
 }
 
 /*chabatta*/
