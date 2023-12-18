@@ -1,26 +1,16 @@
 body {
-    background-color: rgb(216, 210, 27);
-    color: brown;
     font-family: 'HalyardDis_ISIAU Bk';
-    font-size: 100px;
+    font-size: 20px;
 }
 
 h1{
-    color: rgba(30, 21, 80, 0.25);
     font-family: 'HalyardDis_ISIAU Bk';
-    font-size: 500px;
+    font-size: 20px;
 }
 
 a{
-    color: rgba(36, 23, 110, 0.25);
     text-decoration: none;
-    font-style: italic;
-}
-
-a:hover{
-    color: blueviolet;
-    background-color: black;
-    text-decoration:underline;
+    border-bottom: 1px solid black; /*short hand > contrazione diverse linee di codice*/
 }
 
 /*chabatta*/
