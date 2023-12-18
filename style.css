@@ -17,9 +17,14 @@ a:hover{
     color: black;
     text-decoration: none;
 }
+
 a:visited{
     color: gray;
     text-decoration: line-through;
+}
+
+div{
+    background-color: blue;
 }
 
 /*chabatta*/
