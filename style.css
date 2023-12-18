@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(216, 210, 27);
+    color: brown;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h1{
+    color: rgba(30, 21, 80, 0.25);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1100px;
+}
+
+a{
+    color: rgba(36, 23, 110, 0.25);
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:hover{
+    color: blueviolet;
+    background-color: black;
+    text-decoration:underline;
+}
+
+/*chabatta*/
