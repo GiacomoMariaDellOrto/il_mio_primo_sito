@@ -1,12 +1,21 @@
 body {
-    font-family: 'HalyardDis_ISIAU Bk', sans-serif;
-    font-size: 20px;
+    font-family: 'HalyardDis_ISIAU Bk', sans-serif; /*nome famiglia nel css del font*/
+    font-size: 16px;
     display: flex;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2; /*interlinea in questo caso 1.2 volte di 16px*/
+    height: 100vh; /*v sta per view port e h è l'altezza > body alto come la finestra del browser*/
+    overflow-y: hidden; /*non scrolla più sull'asse delle y*/
 }
-
-h1{
-    font-family: 'HalyardDis_ISIAU Bk';
-    font-size: 20px;
+ 
+h2 {
+    margin: 0px;
+    font-size: 1.3em; /*ho diviso i pixel che vorrei per h2, che è 21, per il font size generale del body. 1 em in questo caso è 16 px*/
+    font-weight: normal;
+    position: fixed; /*si sono messi in un livello sopra > fissi per tutto il sito*/
+    background-color: white;
+    width: calc(20% - 10px); /*calcola il programma dal 100% tolgo il padding*/
 }
 
 a{
@@ -14,6 +23,7 @@ a{
     color:black;
     border-bottom: 1px solid black; /*short hand > contrazione diverse linee di codice*/
 }
+
 a:hover{
     color: black;
     text-decoration: none;
@@ -24,4 +34,47 @@ a:visited{
     text-decoration: line-through;
 }
 
-/*chabatta*/
+img{
+    width: 100%;
+}
+
+div{
+    width: 20%;
+    padding: 0px 5px 0px 5px; /*top-right-bottom-left*/
+    overflow-y: scroll; /*scrolla sull'asse delle y nei particolari div*/
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+div::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+div {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+div.column2 time{  
+    font-size: 1.18em; /*nel div2, calendario, prendi il selettore time e fammelo di grandezza più grande*/
+} 
+
+div.column1, div.column2, div.column3, div.column4 {
+    border-right: 1px solid black;
+}
+
+div.separatore {
+    margin-top: 20px;
+}
+
+/*MEDIA QUERY*/
+/*il codice valee per tutti gli schermi la cui largehzza massima vale 420px*/
+@media screen and (max-width: 420px) {
+    body {
+        width: calc(100vw * 5);
+    }
+
+    div {
+        width: 100%;
+    }
+}
